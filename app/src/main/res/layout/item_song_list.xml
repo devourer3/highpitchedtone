@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/songlist_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/perfect_singer_activity_itemselected"
+    android:orientation="horizontal">
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/song_image"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_margin="10dp"
+      android:src="@drawable/perfect_singer_activity_nowhere"
+      app:civ_border_width="1dp"
+      app:civ_circle_background_color="@color/colorDarkNavy_2" />
+
+  <TextView
+      android:id="@+id/song_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_weight="1"
+      android:text="어디에도"
+      android:textSize="20dp" />
+
+  <TextView
+      android:id="@+id/song_singer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="10dp"
+      android:layout_weight="1"
+      android:text="M.C THE MAX"
+      android:textSize="10dp" />
+
+</LinearLayout>

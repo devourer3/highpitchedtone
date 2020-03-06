@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1072560695756",
+    "firebase_url": "https://video-193408.firebaseio.com",
+    "project_id": "video-193408",
+    "storage_bucket": "video-193408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072560695756:android:5f648fdc285d5aac",
+        "android_client_info": {
+          "package_name": "com.mymusic.orvai.high_pitched_tone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072560695756-euc1nc9d4lm8pe9kk0bs8bobghrav0r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mymusic.orvai.high_pitched_tone",
+            "certificate_hash": "f9b6bfb281b16ba18008fa14266d075b57250eeb"
+          }
+        },
+        {
+          "client_id": "1072560695756-8e9covv4suf6s9cb475t4t9dh09lbgfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArVc946TPnlc4gpqtAbP8oT5f5vWuebJk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072560695756-8e9covv4suf6s9cb475t4t9dh09lbgfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

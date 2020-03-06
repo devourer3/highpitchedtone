@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pitch_challenge_wallpaper"
+    android:orientation="vertical"
+    tools:context="com.mymusic.orvai.high_pitched_tone.Mic_high_challenge">
+
+    <TextView
+        android:id="@+id/pitch_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="5초"
+        android:textColor="@color/colorWhite"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--app:rcSecondaryProgress="800"-->
+    <!--app:rcSecondaryProgressColor="@color/black_overlay"-->
+    <!--app:rcIconPaddingLeft="dimension"-->
+    <!--app:rcIconPaddingRight="dimension"-->
+    <!--app:rcIconPaddingTop="dimension"-->
+    <!--app:rcIconPaddingBottom="dimension"-->
+    <!--app:rcProgress="90"-->
+    <!--app:rcIconHeight="10dp"-->
+    <!--app:rcIconWidth="10dp"-->
+
+
+    <TextView
+        android:id="@+id/pitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="음성 Hz"
+        android:textColor="@color/colorWhite"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="음계"
+        android:textColor="@color/colorWhite"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pitch" />
+
+    <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/corner_progress"
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note"
+        app:rcBackgroundColor="@color/colorYellow"
+        app:rcBackgroundPadding="10dp"
+        app:rcIconBackgroundColor="@color/custom_progress_red_progress"
+        app:rcIconPadding="10dp"
+        app:rcIconSize="80dp"
+        app:rcIconSrc="@mipmap/ic_music_note"
+        app:rcMax="1108.72"
+        app:rcProgressColor="@color/colorOrange"
+        app:rcRadius="20dp"
+        app:rcReverse="false" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/high_pitch_challenge_activity_pitch_start_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/corner_progress" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="177dp" />
+
+    <Button
+        android:id="@+id/rank_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/radius1"
+        android:drawableLeft="@drawable/high_pitch_rank"
+        android:text="순위보기"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/challenge_back_fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorDarkNavy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/common_activity_back_btn" />
+
+</android.support.constraint.ConstraintLayout>

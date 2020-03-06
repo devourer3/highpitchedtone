@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal"
+    android:background="@drawable/border"
+    >
+
+  <ImageView
+      android:id="@+id/list_item_vocaltrainer_icon"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="@dimen/horizontal_margin"
+      android:layout_marginRight="@dimen/horizontal_margin" />
+
+  <TextView
+      android:id="@+id/list_item_vocaltrainer_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="4dp"
+      android:layout_weight="1"
+      android:text="보컬트레이너"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      />
+
+  <ImageView
+      android:id="@+id/list_item_vocaltrainer_arrow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginRight="@dimen/horizontal_margin"
+      android:layout_marginLeft="16dp"
+      android:src="@drawable/ic_arrow_down" />
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/common_background"
+        android:orientation="vertical"
+        tools:context="com.mymusic.orvai.high_pitched_tone.RegisterActivity">
+
+
+        <ImageView
+            android:id="@+id/image_pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/register_activity_camera_or_album"
+            android:background="@drawable/radius5"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/l_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/radius5"
+                android:drawableLeft="@drawable/register_activity_id"
+                android:ems="10"
+                android:focusable="auto"
+                android:gravity="center"
+                android:hint="아이디 입력(6자이상)"
+                android:textColorHint="@color/colorYellow"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/id_already_user_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/user_pw"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/radius5"
+                android:textColorHint="@color/colorYellow"
+                android:drawableLeft="@drawable/register_activity_password"
+                android:ems="10"
+                android:focusable="auto"
+                android:gravity="center"
+                android:hint="비밀번호 입력"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/user_pw_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/radius5"
+                android:drawableLeft="@drawable/register_activity_confirm"
+                android:ems="10"
+                android:focusable="auto"
+                android:gravity="center"
+                android:textColorHint="@color/colorYellow"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/password_confirm_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/p_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/radius5"
+                android:textColorHint="@color/colorYellow"
+                android:drawableLeft="@drawable/register_activity_name"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="이름 입력"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/reg_btn"
+            android:layout_width="216dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/radius6"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="회  원  가  입" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/common_activity_back_btn"
+        app:backgroundTint="@color/colorDarkNavy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

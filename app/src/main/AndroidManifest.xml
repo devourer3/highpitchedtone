@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mymusic.orvai.high_pitched_tone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Loading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Loading" />
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Loading" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LectureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Lecture" />
+        <activity
+            android:name=".Bbs_write_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toolbar_Activity" />
+        <activity
+            android:name=".Bbs_view_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Main" />
+        <activity
+            android:name=".Bbs_modify_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toolbar_Activity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <service
+            android:name=".Service.Socket_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <activity
+            android:name=".Chat_room_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Chat_Activity" />
+        <activity
+            android:name=".Chat_room_create_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Main" />
+        <activity
+            android:name=".Mic_high_challenge"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Main" />
+        <activity
+            android:name=".Perfect_singer"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Main" />
+        <!-- <service -->
+        <!-- android:name=".Service.Pitch_Service" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"></service> -->
+        <activity
+            android:name=".Pitch_ear_test_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Main" />
+        <activity
+            android:name=".Ear_sensitivity_test"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialog" />
+        <activity
+            android:name=".Camera_facedetection"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@style/App_Main" />
+        <activity android:name=".Perfect_singer_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Main" />
+    </application>
+
+</manifest>

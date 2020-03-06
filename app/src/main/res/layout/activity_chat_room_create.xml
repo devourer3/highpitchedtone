@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:gravity="center"
+    tools:context="com.mymusic.orvai.high_pitched_tone.Chat_room_create_Activity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="3dp"
+        android:text="1. 방제목" />
+
+    <EditText
+        android:id="@+id/room_create_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="방제목을 입력하세요."
+        android:inputType="textPersonName"
+        android:layout_marginBottom="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="3dp"
+        android:text="2. 공개여부" />
+
+    <Switch
+        android:id="@+id/room_create_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:checked="false"
+        android:text="공개"
+        android:textColor="@android:color/holo_blue_dark"
+        android:thumbTint="@color/colorYellow"
+        android:trackTint="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="3dp"
+        android:text="3. 방 비밀번호" />
+
+    <EditText
+        android:id="@+id/room_create_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="비밀번호를 입력하세요."
+        android:inputType="textPassword"
+        android:layout_marginBottom="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="3dp"
+        android:text="4. 최대인원" />
+
+    <RadioGroup
+        android:id="@+id/room_create_usermax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_btn_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:tag="2"
+            android:text="2명" />
+
+        <RadioButton
+            android:id="@+id/radio_btn_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="3"
+            android:text="3명" />
+
+        <RadioButton
+            android:id="@+id/radio_btn_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="4"
+            android:text="4명" />
+
+        <RadioButton
+            android:id="@+id/radio_btn_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="5"
+            android:text="5명" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/room_create_reg"
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border6"
+        android:text="방 생성" />
+
+    <Button
+        android:id="@+id/room_create_cancel"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border3"
+        android:text="취소" />
+
+</LinearLayout>
